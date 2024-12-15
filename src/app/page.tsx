@@ -47,19 +47,19 @@ export default function Page() {
           delay={BLUR_FADE_DELAY}
           className="relative z-10 text-center space-y-8 py-12 px-4 rounded-2xl"
         >
-          <Avatar className="size-40 mx-auto border-4 border-white/50 dark:border-white/20 hover:scale-110 transition-all duration-300">
+          <Avatar className="size-32 mx-auto border-4 border-white/50 dark:border-white/20 hover:scale-110 transition-all duration-300">
             <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
             <AvatarFallback>{DATA.initials}</AvatarFallback>
           </Avatar>
           <div className="animate-slideInFromLeft">
             <BlurFadeText
-              className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 dark:from-blue-300 dark:to-purple-400"
+              className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 dark:from-blue-300 dark:to-purple-400"
               text={`Hey, Im ${DATA.name.split(" ")[0]} 👋🏻`}
             />
           </div>
           <div className="animate-slideInFromRight">
             <WordRotate
-              className="text-xl md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 dark:from-yellow-300 dark:via-pink-400 dark:to-purple-500"
+              className="text-base md:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 dark:from-yellow-300 dark:via-pink-400 dark:to-purple-500"
               words={[
                 "Living my 20s to the fullest",
                 "Wanna have a trip with me?",
@@ -73,21 +73,21 @@ export default function Page() {
       </section>
 
       {/* Automotive Passion Section */}
-      <section className=" relative py-20">
+      <section className=" relative py-10">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900 to-blue-900 dark:from-purple-950 dark:to-blue-950" />
         <BlurFade
           delay={BLUR_FADE_DELAY * 2}
           className="relative container mx-auto px-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-500 dark:from-orange-300 dark:to-red-400 mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-500 dark:from-orange-300 dark:to-red-400 mb-8 text-center">
             Living Life Quarter Mile at a Time
           </h2>
           <div className="flex justify-center">
             <div className="backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10 space-y-4 hover:scale-105 transition-all duration-300 max-w-2xl">
-              <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400">
-                JDM Dreams
+              <h3 className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400">
+                My Dreams - JDM Dreams
               </h3>
-              <p className="text-white/70 dark:text-white/50 text-base md:text-lg leading-relaxed">
+              <p className="text-sm md:text-base text-white/70 dark:text-white/50 leading-relaxed">
                 The Toyota Supra MK4 isnt just a car - its automotive
                 perfection. That legendary 2JZ-GTE engine, capable of handling
                 insane power levels while staying reliable, is engineering at
@@ -106,21 +106,21 @@ export default function Page() {
       </section>
 
       {/* Football Passion Section */}
-      <section className=" relative py-20">
+      <section className=" relative py-10">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900 to-indigo-900 dark:from-blue-950 dark:to-indigo-950" />
         <BlurFade
           delay={BLUR_FADE_DELAY * 3}
           className="relative container mx-auto px-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 dark:from-green-300 dark:to-blue-400 mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500 dark:from-green-300 dark:to-blue-400 mb-8 text-center">
             Football is More Than Just a Game
           </h2>
           <div className="flex justify-center">
             <div className="backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10 space-y-4 hover:scale-105 transition-all duration-300 max-w-2xl">
-              <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400">
-                The CR7 Effect
+              <h3 className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500 dark:from-yellow-300 dark:to-orange-400">
+                My Idiol - The CR7 Effect
               </h3>
-              <p className="text-white/70 dark:text-white/50 text-base md:text-lg leading-relaxed">
+              <p className="text-sm md:text-base text-white/70 dark:text-white/50 leading-relaxed">
                 Watching Cristiano Ronaldo isnt just watching football - its
                 witnessing determination personified. That iconic 40-yard
                 thunderbolt against Porto, the gravity-defying header against
@@ -141,17 +141,17 @@ export default function Page() {
       </section>
 
       {/* Photography Section */}
-      <section className=" relative py-20">
+      <section className=" relative py-10">
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-900 to-purple-900 dark:from-indigo-950 dark:to-purple-950" />
         <BlurFade
           delay={BLUR_FADE_DELAY * 4}
           className="relative container mx-auto px-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-red-500 dark:from-pink-300 dark:to-red-400 mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-red-500 dark:from-pink-300 dark:to-red-400 mb-8 text-center">
             Through My Lens
           </h2>
           <div className="max-w-2xl mx-auto mb-12">
-            <p className="text-white/70 dark:text-white/50 text-base md:text-lg leading-relaxed text-center">
+            <p className="text-sm md:text-base text-white/70 dark:text-white/50 leading-relaxed text-center">
               Photography lets me freeze moments in time and tell stories
               through visuals. From urban landscapes to automotive shots, I love
               capturing the beauty in everyday scenes. If you enjoy my
@@ -171,7 +171,7 @@ export default function Page() {
               className="aspect-square relative rounded-2xl overflow-hidden group"
             >
               <Image
-                src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000"
+                src="/iiit.webp"
                 alt="Urban Landscape"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -179,7 +179,7 @@ export default function Page() {
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/70 to-purple-600/70 dark:from-pink-600/70 dark:to-purple-700/70 group-hover:opacity-50 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <BlurFadeText
-                  className="text-xl md:text-2xl font-bold text-white dark:text-white/90"
+                  className="text-base md:text-xl font-bold text-white dark:text-white/90"
                   text="Urban Landscapes"
                 />
               </div>
@@ -197,7 +197,7 @@ export default function Page() {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/70 to-green-600/70 dark:from-blue-600/70 dark:to-green-700/70 group-hover:opacity-50 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <BlurFadeText
-                  className="text-xl md:text-2xl font-bold text-white dark:text-white/90"
+                  className="text-base md:text-xl font-bold text-white dark:text-white/90"
                   text="Automotive"
                 />
               </div>
@@ -215,7 +215,7 @@ export default function Page() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/70 to-red-600/70 dark:from-orange-600/70 dark:to-red-700/70 group-hover:opacity-50 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <BlurFadeText
-                  className="text-xl md:text-2xl font-bold text-white dark:text-white/90"
+                  className="text-base md:text-xl font-bold text-white dark:text-white/90"
                   text="Street Life"
                 />
               </div>
@@ -225,13 +225,13 @@ export default function Page() {
       </section>
 
       {/* Adventure Section */}
-      <section className=" relative py-20">
+      <section className=" relative py-10">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900 to-blue-900 dark:from-purple-950 dark:to-blue-950" />
         <BlurFade
           delay={BLUR_FADE_DELAY * 6}
           className="relative container mx-auto px-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-600 dark:from-orange-300 dark:to-red-500 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-red-600 dark:from-orange-300 dark:to-red-500 mb-12 text-center">
             Travel Adventures
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -247,11 +247,11 @@ export default function Page() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               <div className="absolute bottom-4 left-4">
-                <h3 className="text-lg md:text-xl font-bold text-white">
+                <h3 className="text-xl text-base md:text-lg font-bold text-white">
                   Kerala
                 </h3>
-                <p className="text-sm md:text-base text-white/80">
-                  Backwaters & Tea Gardens
+                <p className="text-md md:text-sm text-white/80">
+                  Backwaters & Tea Gardens with my kannadiga friends - IIIT
                 </p>
               </div>
             </BlurFade>
@@ -268,11 +268,11 @@ export default function Page() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               <div className="absolute bottom-4 left-4">
-                <h3 className="text-lg md:text-xl font-bold text-white">
+                <h3 className="text-xl text-base md:text-lg font-bold text-white">
                   Rameshwaram
                 </h3>
-                <p className="text-sm md:text-base text-white/80">
-                  Temple & Beaches
+                <p className="text-md md:text-sm text-white/80">
+                  Temple & Beaches with my IIIT hindi friends
                 </p>
               </div>
             </BlurFade>
@@ -289,11 +289,11 @@ export default function Page() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
               <div className="absolute bottom-4 left-4">
-                <h3 className="text-lg md:text-xl font-bold text-white">
+                <h3 className="text-xl text-base md:text-lg font-bold text-white">
                   Gokarna
                 </h3>
-                <p className="text-sm md:text-base text-white/80">
-                  Paradise Beaches
+                <p className="text-md md:text-sm text-white/80">
+                  Paradise Beaches with school friends
                 </p>
               </div>
             </BlurFade>
@@ -304,7 +304,7 @@ export default function Page() {
               delay={BLUR_FADE_DELAY * 7.6}
               className="backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10 space-y-6"
             >
-              <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
+              <h3 className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-orange-500">
                 My Recent Explorations
               </h3>
               <ul className="space-y-4">
@@ -319,7 +319,7 @@ export default function Page() {
                   <BlurFadeText
                     key={item}
                     delay={BLUR_FADE_DELAY * (8 + i)}
-                    className="text-base md:text-lg text-white/70"
+                    className="text-sm md:text-base text-white/70"
                     text={item}
                   />
                 ))}
@@ -330,7 +330,7 @@ export default function Page() {
               delay={BLUR_FADE_DELAY * 7.8}
               className="backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10 space-y-6"
             >
-              <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-teal-500">
+              <h3 className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-teal-500">
                 My Next Destinations
               </h3>
               <ul className="space-y-4">
@@ -344,7 +344,7 @@ export default function Page() {
                   <BlurFadeText
                     key={item}
                     delay={BLUR_FADE_DELAY * (9 + i)}
-                    className="text-base md:text-lg text-white/70"
+                    className="text-sm md:text-base text-white/70"
                     text={item}
                   />
                 ))}
@@ -355,7 +355,7 @@ export default function Page() {
           <div className="text-center">
             <a
               href={DATA.contact.social.Instagram.url}
-              className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-base md:text-lg hover:scale-105 transition-transform duration-300"
+              className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-sm md:text-base hover:scale-105 transition-transform duration-300"
             >
               Want to join my next adventure? Lets connect! →
             </a>
@@ -364,17 +364,17 @@ export default function Page() {
       </section>
 
       {/* Tech Section */}
-      <section className="relative py-20">
+      <section className="relative py-10">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900 to-purple-900 dark:from-blue-950 dark:to-purple-950" />
         <BlurFade
           delay={BLUR_FADE_DELAY * 9}
           className="relative container mx-auto px-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 dark:from-blue-300 dark:to-purple-500 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 dark:from-blue-300 dark:to-purple-500 mb-12 text-center">
             Tech Enthusiast
           </h2>
           <div className="backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10">
-            <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400 dark:from-blue-200 dark:to-purple-300 mb-8">
+            <h3 className="text-xl md:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400 dark:from-blue-200 dark:to-purple-300 mb-8">
               Tech Arsenal
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -398,19 +398,19 @@ export default function Page() {
       </section>
 
       {/* Contact Section */}
-      <section className="relative py-20">
+      <section className="relative py-10">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-900 to-indigo-900 dark:from-purple-950 dark:to-indigo-950" />
         <BlurFade
           delay={BLUR_FADE_DELAY * 11}
           className="relative container mx-auto px-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-500 dark:from-emerald-200 dark:to-teal-400 mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-500 dark:from-emerald-200 dark:to-teal-400 mb-12 text-center">
             Lets Connect
           </h2>
           <div className="max-w-2xl mx-auto backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <form className="space-y-6">
               <div className="space-y-2">
-                <label className="block text-white text-base md:text-lg font-medium">
+                <label className="block text-white text-sm md:text-base font-medium">
                   What should I call you?
                 </label>
                 <input
@@ -421,7 +421,7 @@ export default function Page() {
               </div>
 
               <div className="space-y-2">
-                <label className="block text-white text-base md:text-lg font-medium">
+                <label className="block text-white text-sm md:text-base font-medium">
                   How can I reach you?
                 </label>
                 <input
@@ -432,7 +432,7 @@ export default function Page() {
               </div>
 
               <div className="space-y-2">
-                <label className="block text-white text-base md:text-lg font-medium">
+                <label className="block text-white text-sm md:text-base font-medium">
                   Whats on your mind?
                 </label>
                 <select className="w-full px-4 py-3 rounded-xl bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300">
@@ -458,7 +458,7 @@ export default function Page() {
               </div>
 
               <div className="space-y-2">
-                <label className="block text-white text-base md:text-lg font-medium">
+                <label className="block text-white text-sm md:text-base font-medium">
                   Tell me more
                 </label>
                 <textarea
@@ -468,7 +468,7 @@ export default function Page() {
                 ></textarea>
               </div>
 
-              <ShinyButton className="w-full py-3 text-base md:text-lg font-medium backdrop-blur-md bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 rounded-xl text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+              <ShinyButton className="w-full py-3 text-sm md:text-base font-medium backdrop-blur-md bg-gradient-to-r from-emerald-400 to-teal-500 hover:from-emerald-500 hover:to-teal-600 rounded-xl text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
                 Send Message
               </ShinyButton>
             </form>
