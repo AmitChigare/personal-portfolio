@@ -25,7 +25,7 @@ const BackgroundGradient = () => {
 
       {/* Noise texture */}
       <div className="fixed inset-0 -z-30 opacity-30 mix-blend-overlay dark:opacity-20">
-        <div className="absolute inset-0 bg-[url('/noise.svg')] animate-noise" />
+        <div className="absolute inset-0 bg-[url(/noise.svg)] animate-noise" />
       </div>
 
       {/* Glass overlay */}
@@ -54,7 +54,7 @@ export default function Page() {
           <div className="animate-slideInFromLeft">
             <BlurFadeText
               className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 dark:from-blue-300 dark:to-purple-400"
-              text={`Hey, I'm ${DATA.name.split(" ")[0]} 👋🏻`}
+              text={`Hey, Im ${DATA.name.split(" ")[0]} 👋🏻`}
             />
           </div>
           <div className="animate-slideInFromRight">
@@ -88,17 +88,17 @@ export default function Page() {
                 JDM Dreams
               </h3>
               <p className="text-white/70 dark:text-white/50 text-lg leading-relaxed">
-                The Toyota Supra MK4 isn't just a car - it's automotive
+                The Toyota Supra MK4 isnt just a car - its automotive
                 perfection. That legendary 2JZ-GTE engine, capable of handling
                 insane power levels while staying reliable, is engineering at
                 its finest. Every time I hear that twin-turbo spool up in
-                videos, it's pure music. The fact that it was Paul Walker's ride
+                videos, its pure music. The fact that it was Paul Walkers ride
                 in Fast & Furious just adds to its legendary status. One day,
-                I'll have my own black Supra, making that sweet turbo music.
+                Ill have my own black Supra, making that sweet turbo music.
               </p>
               <BlurFadeText
                 className="text-sm text-white/50 dark:text-white/30 italic"
-                text="'If you're gonna race, race a proper car.' - Smokey Nagata"
+                text="If youre gonna race, race a proper car. - Smokey Nagata"
               />
             </div>
           </div>
@@ -121,19 +121,19 @@ export default function Page() {
                 The CR7 Effect
               </h3>
               <p className="text-white/70 dark:text-white/50 text-lg leading-relaxed">
-                Watching Cristiano Ronaldo isn't just watching football - it's
+                Watching Cristiano Ronaldo isnt just watching football - its
                 witnessing determination personified. That iconic 40-yard
                 thunderbolt against Porto, the gravity-defying header against
                 Sampdoria, the nerveless penalty against Juventus in the 93rd
                 minute - these moments shaped my understanding of what mental
-                strength truly means. His journey from Madeira's narrow streets
-                to becoming football's greatest goalscorer shows that with
+                strength truly means. His journey from Madeiras narrow streets
+                to becoming footballs greatest goalscorer shows that with
                 relentless work ethic and unwavering self-belief, no dream is
                 too big.
               </p>
               <BlurFadeText
                 className="text-sm text-white/50 dark:text-white/30 italic"
-                text="'Your love makes me strong, your hate makes me unstoppable.' - CR7"
+                text="Your love makes me strong, your hate makes me unstoppable. - CR7"
               />
             </div>
           </div>
@@ -298,7 +298,7 @@ export default function Page() {
               <ul className="space-y-4">
                 {[
                   "Trekked through the Western Ghats in Kerala",
-                  "Beach hopping in Vizag's pristine coastline",
+                  "Beach hopping in Vizags pristine coastline",
                   "Street food adventures in Hyderabad",
                   "Hill station getaway in Ooty",
                   "Cultural immersion in Chennai",
@@ -345,7 +345,7 @@ export default function Page() {
               href={DATA.contact.social.Instagram.url}
               className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold text-lg hover:scale-105 transition-transform duration-300"
             >
-              Want to join my next adventure? Let's connect! →
+              Want to join my next adventure? Lets connect! →
             </a>
           </div>
         </BlurFade>
@@ -393,7 +393,7 @@ export default function Page() {
           className="relative container mx-auto px-6"
         >
           <h2 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-300 to-teal-500 dark:from-emerald-200 dark:to-teal-400 mb-12 text-center">
-            Let's Connect
+            Lets Connect
           </h2>
           <div className="max-w-2xl mx-auto backdrop-blur-lg bg-white/10 dark:bg-white/5 p-8 rounded-2xl border border-white/20 dark:border-white/10 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <form className="space-y-6">
@@ -421,7 +421,7 @@ export default function Page() {
 
               <div className="space-y-2">
                 <label className="block text-white text-lg font-medium">
-                  What's on your mind?
+                  Whats on your mind?
                 </label>
                 <select className="w-full px-4 py-3 rounded-xl bg-white/10 dark:bg-white/5 border border-white/20 dark:border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all duration-300">
                   <option value="" className="bg-gray-800">
